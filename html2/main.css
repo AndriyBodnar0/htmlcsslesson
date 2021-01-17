@@ -1,0 +1,21 @@
+html {
+
+    scroll-behavior: smooth;
+}
+ .heading-2 {
+
+    background: cornflowerblue;
+    text-align: center;
+}
+.justify20 {
+    text-align: justify;
+    font-size: 20px; 
+
+}
+.pading-left-30{
+    padding-left: 30px  ;
+}
+
+.menu li{
+    display: inline-block;
+}

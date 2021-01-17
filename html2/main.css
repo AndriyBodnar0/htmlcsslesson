@@ -2,6 +2,11 @@ html {
 
     scroll-behavior: smooth;
 }
+.heading-1 {
+    background:cyan;
+    text-align: center;
+    
+}
  .heading-2 {
 
     background: cornflowerblue;

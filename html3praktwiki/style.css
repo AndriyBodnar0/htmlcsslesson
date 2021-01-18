@@ -1,9 +1,12 @@
 .content {
      width: 131px;
     height: 179x;
+    margin: 20px 20px;
     
-    background: gray;
+    background: rgb(169, 208, 240);
     float: left;
+}
 
-
+.clear {
+    clear: both;
 }

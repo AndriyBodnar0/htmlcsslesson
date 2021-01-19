@@ -1,3 +1,19 @@
+.allcontent {
+    width: 590px;
+    height: 3705px;
+    margin-left: 200px;
+    float: left;
+
+}
+.leftpanel {
+
+    width: 160px;
+    height: 3705px;
+    background-color: gray;
+    margin-right: 10px;
+    
+
+}
 .content {
      width: 131px;
     height: 179x;

@@ -1,3 +1,9 @@
+.imagelogo {
+    width: 260px;
+    height: 225px;
+    background: black;
+
+}
 .allcontent {
     width: 590px;
     height: 3705px;
@@ -9,7 +15,7 @@
 
     width: 160px;
     height: 3705px;
-    background-color: gray;
+    background-color: rgb(190, 210, 253);
     margin-right: 10px;
     
 

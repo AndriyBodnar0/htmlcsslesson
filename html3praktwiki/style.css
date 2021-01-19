@@ -1,7 +1,8 @@
 .imagelogo {
-    width: 260px;
-    height: 225px;
-    background: black;
+    width: 270px;
+    height: 230px;
+    
+    float:right;
 
 }
 .allcontent {
@@ -11,15 +12,8 @@
     float: left;
 
 }
-.leftpanel {
-
-    width: 160px;
-    height: 3705px;
-    background-color: rgb(190, 210, 253);
-    margin-right: 10px;
     
 
-}
 .content {
      width: 131px;
     height: 179x;

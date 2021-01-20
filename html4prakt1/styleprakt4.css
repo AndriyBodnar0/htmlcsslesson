@@ -10,82 +10,82 @@
     flex-direction: column;
 }
 .header {
-    width: 50px;
+    width: 1000px;
     height: 50px;
     background: skyblue;
     display: flex;
 }
 
 .hero {
-    width: 50px;
-    height: 50px;
+    width: 300px;
+    height: 150px;
     background: plum;
     display: flex;
 }
 
 .sidebar {
-    width: 50px;
-    height: 50px;
+    width: 300px;
+    height: 450px;
     background: greenyellow;
     
 }
 .hero-sidebar {
-    width: 50px;
-    height: 100px;
+    width: 300px;
+    height: 300px;
     display: flex;
     flex-direction: column;
 
 }
 
 .maincontent {
-    width: 50px;
-    height: 50px;
+    width: 700px;
+    height: 600px;
     display: flex;
     background: orange;
     
 }
 
 .extracontent {
-    width: 50px;
-    height: 50px;
+    width: 700px;
+    height: 150px;
     background: silver;
     display: flex;
 }
 .maincontent-extracontent {
-    width: 50px;
-    height: 100px;
+    width: 700px;
+    height: 300px;
     display: flex;
     flex-direction: column;
 }
 .hero-sidebar-maincontent-extracontent {
-    width: 100px;
-    height: 100px;
+    width: 1000px;
+    height: 300px;
     display: flex;
 }
 
 .relatedimages {
-    width: 50px;
-    height: 50px;
+    width: 800px;
+    height: 150px;
     background: green;
     display: flex;
 }
 
 .relatedpost {
-    width: 50px;
-    height: 50px;
+    width: 200px;
+    height: 150px;
     background: pink;
     display: flex;
 }
 
 .relatedimages-relatedpost {
-    width: 100px;
-    height: 50px;
+    width: 1000px;
+    height: 150px;
     display: flex;
 }
 
 .footer {
-    width: 50px;
-    height: 50px;
+    width: 1000px;
+    height: 150px;
     background: orangered;
     display: flex;
 }

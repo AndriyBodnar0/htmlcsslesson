@@ -7,15 +7,60 @@
     height: 1000px;
     display: flex;
     background: silver;
+    justify-content: space-around;
+    
 }
 .header {
     width: 50px;
     height: 50px;
     display: flex;
-    border: 5px black;
+    border: 1px solid black;
+    
 }
 .nav {
     width: 50px;
     height: 50px;
     display: flex;
+    border: 1px solid black;
+}
+
+.section {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border: 1px solid black;
+}
+
+.article {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border: 1px solid black;
+}
+.p {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border: 1px solid black;
+}
+
+.aside {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border: 1px solid black;
+}
+
+.p-aside {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    border: 1px solid black;
+}
+
+footer {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border: 1px solid black;
 }

@@ -1,66 +1,147 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+
 .body {
-    width: 1000px;
-    height: 1000px;
+    width: 1200px;
+    height: 1200px;
     display: flex;
+    padding-top: 10px;
     background: silver;
-    justify-content: space-around;
+    flex-direction: column;
+    border: 5px solid black;
     
 }
 .header {
-    width: 50px;
+    width: 998px;
+    height: 100px;
+    display: flex;
+    border: 5px solid black;
+    align-items: flex-end;
+    
+    margin: 5px;
+}
+.nav {
+    width: 980px;
     height: 50px;
     display: flex;
     border: 1px solid black;
-    
+    margin-bottom: 5px ;
 }
-.nav {
-    width: 50px;
-    height: 50px;
+.nav-section {
+    width: 250px;
+    height: 550px;
     display: flex;
     border: 1px solid black;
 }
 
 .section {
-    width: 50px;
-    height: 50px;
+    width: 252px;
+    height: 756px;
+    display: flex;
+    border: 5px solid black;
+    flex-direction: column;
+    
+    margin: 5px 5px;
+}
+
+.header-section {
+    width: 250px;
+    height: 100px;
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+}
+
+.footer-section {
+    width: 250px;
+    height: 100px;
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+}
+
+
+.section1 {
+    width: 714px;
+    height: 762px;
+    display: flex;
+    border: 5px solid black;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-section1 {
+    width: 700px;
+    height: 100px;
+    display: flex;
+    border: 1px solid black;
+}
+.section1-footer {
+    width: 700px;
+    height: 100px;
     display: flex;
     border: 1px solid black;
 }
 
+.section-section1 {
+    width: 1000px;
+    height: 774px;
+    display: flex;
+    
+}
+
 .article {
-    width: 50px;
+    width: 700px;
+    height: 257px;
+    display: flex;
+    border: 3px solid black;
+    flex-direction: column;
+}
+.artical-header {
+    width: 700px;
     height: 50px;
     display: flex;
     border: 1px solid black;
+    
 }
+.artical-footer {
+    width: 700px;
+    height: 50px;
+    display: flex;
+    border: 1px solid black;
+    
+}
+
 .p {
-    width: 50px;
+    width: 700px;
     height: 50px;
     display: flex;
     border: 1px solid black;
 }
 
 .aside {
-    width: 50px;
-    height: 50px;
+    width: 200px;
+    height: 150px;
     display: flex;
     border: 1px solid black;
 }
 
 .p-aside {
-    width: 100px;
-    height: 100px;
+    width: 700px;
+    height: 150px;
     display: flex;
     border: 1px solid black;
 }
-
-footer {
-    width: 50px;
-    height: 50px;
+.p-aside-p {
+    width: 500px;
+    height: 150px;
     display: flex;
     border: 1px solid black;
+    
+}
+
+.footer {
+    width: 1000px;
+    height: 100px;
+    display: flex;
+    border: 5px solid black;
+    margin-top: 20px;
 }

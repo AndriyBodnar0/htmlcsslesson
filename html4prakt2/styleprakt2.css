@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.body {
+    width: 1000px;
+    height: 1000px;
+    display: flex;
+    background: silver;
+}
+.header {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border: 5px black;
+}
+.nav {
+    width: 50px;
+    height: 50px;
+    display: flex;
+}

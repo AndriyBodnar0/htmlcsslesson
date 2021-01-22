@@ -5,7 +5,9 @@
     display: flex;
     padding-top: 10px;
     background: silver;
-    flex-direction: column;
+    
+    align-content: stretch;
+    flex-wrap: wrap;
     border: 5px solid black;
     
 }
@@ -38,6 +40,8 @@
     display: flex;
     border: 5px solid black;
     flex-direction: column;
+    
+    
     
     margin: 5px 5px;
 }
@@ -81,12 +85,6 @@
     border: 1px solid black;
 }
 
-.section-section1 {
-    width: 1000px;
-    height: 774px;
-    display: flex;
-    
-}
 
 .article {
     width: 700px;

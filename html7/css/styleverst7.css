@@ -7,7 +7,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.header_top {
+.header_top  {
     display: flex;
     padding: 0 100px;
     height: 89px;
@@ -51,3 +51,42 @@
     cursor: pointer; 
 } 
 
+.header_main {
+    padding: 94px 102px 153px 244px;
+    
+
+}
+
+.header_content {
+    width: 650px;
+}
+
+.header_sup-title {
+    font-weight: 900;
+    font-size: 19px;
+    text-transform: uppercase;
+    color: #ff9638;
+    margin-bottom: 50px;
+}
+
+
+.header-title {
+    font-weight: 900;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 62px; 
+
+}
+
+.header-text {
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 16px;
+     color: #333333;
+
+}
+.header-text p:last-child {
+    font-weight: bold ;
+
+}

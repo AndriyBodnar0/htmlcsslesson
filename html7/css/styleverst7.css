@@ -91,6 +91,8 @@ color: #3298f2;
      line-height: 16px;
      color: #333333;
      margin-bottom: 123px;
+   
+    
 
 }
 .header-text p:last-child {
@@ -108,6 +110,8 @@ color: #3298f2;
     border: none;
     border-radius: 6px;
     background-color: #ff9638;
+    position: relative;
+    overflow: hidden;
 }
 
 .header_button button::before {
@@ -116,13 +120,13 @@ color: #3298f2;
     width: 50px;
     height: 100%;
     background-color: #ffffff;
-    position: absolute;
+    position:absolute ;
     top: 0;
     transform: skewX(-35deg);
     filter: blur(15px);
     left: -280px;
-    animation:xxx 1500ms ease-in-out infinite;
-    overflow: hidden;
+    animation: xxx 3500ms ease-in-out infinite;
+    
 }
 
 @keyframes xxx {

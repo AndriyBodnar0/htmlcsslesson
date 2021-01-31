@@ -10,42 +10,45 @@
 
     <style>
         .header {
-            height: 50px;
+            height: 60px;
             background: yellowgreen;
         
         }
 
-        .menu-post {
-            height: 200px;
-        }
         .menu {
-            width: 50px;
-            height: 200px;
+            height: 600px;
             background: pink;
 
         }
 
         .post {
-            height: 100px;
+            height: 300px;
             background: turquoise;
+        }
+
+
+        .content {
+          height: 600px;
+          
         }
 
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            One of three columns
-          </div>
-          <div class="col-sm">
-            One of three columns
-          </div>
-          <div class="col-sm">
-            One of three columns
-          </div>
-        </div>
+    <div class="container-fluid">
+       <div class="row">
+         <div class="header w-100"></div>
+       </div>
+       <div class="row">
+         <div class="menu w-25"></div>
+         <div class="content w-75">
+           <div class="post"></div>
+           <div class="post"></div>
+         </div>
+       </div>
+       <div class="header w-100"></div>
+
       </div>
 
 

@@ -1,0 +1,22 @@
+.header {
+    height: 60px;
+    background: yellowgreen;
+
+}
+
+.menu {
+    height: 600px;
+    background: pink;
+
+}
+
+.post {
+    height: 300px;
+    background: turquoise;
+}
+
+
+.content {
+  height: 600px;
+  
+}

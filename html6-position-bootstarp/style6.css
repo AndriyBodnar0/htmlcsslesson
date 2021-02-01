@@ -3,13 +3,6 @@
     padding: 0;
 }
 .box {
-    height: 100px;
+    height: 200px;
     background-color: #102B3E;
-}
-.box1 {
-    height: 50px;
-    /* width: 50px; */
-    background-color: #6964E2;
-    border-radius: 5px;
-    margin: 5px;
 }

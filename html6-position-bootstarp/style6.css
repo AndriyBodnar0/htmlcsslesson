@@ -10,3 +10,7 @@
 .header {
     color: blueviolet;
 } 
+.img1 {
+    position: absolute;
+    bottom: 25rem;
+}

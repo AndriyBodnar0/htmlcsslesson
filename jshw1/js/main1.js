@@ -368,3 +368,27 @@ let father_first_name =  prompt('What is my father first_name');
 // Если светофор красный и машин нет- вывести "стой все рано".
 // Если светофор красный - и машины есть вывести "стой и жди".
 // Если светофор в аварийном режиме вывести "делай что хочешь"!
+
+// let isRoadClear = confirm("машины есть ???");
+// let color = prompt("enter color");
+// if (color == 'green' && isRoadClear) {
+//     console.log("подожди пока нарушители проедут")
+
+// } else if (color == 'green' && !isRoadClear) {
+//     console.log("иди");
+
+// } else if (color == 'yellow' && isRoadClear) {
+//     console.log("жди");
+
+// } else if (color == 'yellow' && !isRoadClear) {
+//     console.log("все равно жди");
+
+// } else if (color == 'red' && !isRoadClear) {
+//     console.log("стой все рано");
+
+// } else if (color == 'red' && isRoadClear) {
+//     console.log("стой и жди");
+
+// } else {
+//     console.log("делай что хочешь");
+// }

@@ -228,10 +228,10 @@ let father_first_name =  prompt('What is my father first_name');
 // 6. У прямоугольного треугольника две стороны n (со значением 3) и m (со значением 4).
 //   Найдите гипотенузу k по теореме Пифагора (нужно использовать функцию Math.pow(число, степень) или оператор возведения в степень ** ).
 
-     let n = 3;
-     let m = 4;
-     let k = Math.sqrt(Math.pow(n, 2) + Math.pow(m, 2));
-     console.log(k)
+    //  let n = 3;
+    //  let m = 4;
+    //  let k = Math.sqrt(Math.pow(n, 2) + Math.pow(m, 2));
+    //  console.log(k)
 
 
 // 7. Напишите скрипт, который выводит "Hello world", создавши переменную str и выводить спомощью document.write, alert и console.log

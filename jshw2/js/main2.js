@@ -555,11 +555,11 @@
     // console.log(array);
 //  диапазон рандома 8 до 732. (но сначала пробуйте БЕЗ ДИАПАЗОНА!)І
 
-    let array = [];
-    for (let i = 0; i < 10; i++) {
-        array.push(Math.round(Math.random() * (732-8) + 8))
-    }
-    console.log(array);
+    // let array = [];
+    // for (let i = 0; i < 10; i++) {
+    //     array.push(Math.round(Math.random() * (732-8) + 8))
+    // }
+    // console.log(array);
     
 
     
@@ -593,18 +593,23 @@
 // console.log(newArray);
 
 //  5. Вывести каждый елемент массива у которого соседний с права элемент - парный
-//   5 масив з числами [100,250,50,168,120,345,188], Які характеризують вартість окремої покупки. обрахувати середній чек.
+
+
+//  5.1 масив з числами [100,250,50,168,120,345,188], Які характеризують вартість окремої покупки. обрахувати середній чек.
 
 // 3 створити масив з рандомними значеннями, помножити всі його елементи на 5 та перемістити їх в інший масив.
+
 // 4 створити масив з будь якими значеннями (стрінги, числа, і тд...). пройтись по ньому, і якщо об'єкт є числом,
 //  додати його в інший масив.
-    let array = ['car', 55, 85,'kart', false, 'green'];
-    let newArray =[];
-    for (let i = 0; i < array.length; i++) {
-        if (typeof array[i] === 'number') {
-           newArray.push(array[i]);
-        }
+
+    // let array =['car', 55, 85,'kart', 255, 'green'];
+    // let newArray =[];
+    // for (let i = 0; i < array.length; i++) {
+    //     if (typeof array[i] === 'number') {
+    //       newArray.push(array[i]);
+    //      }
         
         
-    }
-    console.log(newArray);
+        
+    // }
+    // console.log(newArray);

@@ -1,10 +1,10 @@
-let user = {name: 'vasya', age: 31};
-			console.log(user);
-			// let jsonUSER = '{"name":"vasya","age":31}';
-			let stringify = JSON.stringify(user); // '{"name":"vasya","age":31}'
-			console.log(stringify);
-			let parse = JSON.parse(stringify);
-			console.log(parse);
+	let user = {name: 'vasya', age: 31};
+				console.log(user);
+				// let jsonUSER = '{"name":"vasya","age":31}';
+				let stringify = JSON.stringify(user); // '{"name":"vasya","age":31}'
+				console.log(stringify);
+				let parse = JSON.parse(stringify);
+				console.log(parse);
 
 			let users = [
 			                {name: 'vasya', age: 31, status: false},
@@ -19,8 +19,9 @@ let user = {name: 'vasya', age: 31};
 			                {name: 'olya', age: 31, status: false},
 			                {name: 'max', age: 31, status: true}
 			            ];
-
+						console.log(users);
 			let usersArrayJson = JSON.stringify(users);
 			console.log(usersArrayJson);
+			
 			let parsedJson = JSON.parse(usersArrayJson);
-			console.log(parsedJson);sw
+			console.log(parsedJson);

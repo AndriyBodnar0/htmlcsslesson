@@ -212,9 +212,7 @@ for (let i = 0; i <= 23; i++) {
         console.log('min :' , min++);
         for (let i = 0; i <= type_count; i++) {
            //console.log('sec :' ,sec++);
-           if (i === 2) {
-               break;
-           }
+           
         }
         sec = 0;
         

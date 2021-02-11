@@ -190,6 +190,9 @@
 
     // for (let i = 0; i <= type_count; i++) {
     //     console.log('min :' , min++);
+    // if (min === 3) {
+    //     break;
+    // }
     //     for (let i = 0; i <= type_count; i++) {
     //        console.log('sec :' ,sec++);
            
@@ -200,25 +203,29 @@
 
 // - Відтворити роботу годинника, відрахувавши  2 години  (3 цикли! 1й - години, 2й - хвилини, 3й - секунди)
 
-const type_count = 59
-let min = 0;
-let sec = 0;
-let hour = 0;
+// const type_count = 59
+// let min = 0;
+// let sec = 0;
+// let hour = 0;
 
-for (let i = 0; i <= 23; i++) {
-    console.log('hour :' ,hour++);
-   
-    for (let i = 0; i <= type_count; i++) {
-        console.log('min :' , min++);
-        for (let i = 0; i <= type_count; i++) {
-           //console.log('sec :' ,sec++);
-           
-        }
-        sec = 0;
+// for (let i = 0; i <= 23; i++) {
+//     console.log('hour :' ,hour++);
+//     if (hour === 3) {
+//         break;
         
-    }
-    min = 0;
-}
+//     }
+   
+//     for (let i = 0; i <= type_count; i++) {
+//         console.log('min :' , min++);
+//         for (let i = 0; i <= type_count; i++) {
+//            console.log('sec :' ,sec++);
+           
+//         }
+//         sec = 0;
+        
+//     }
+//     min = 0;
+// }
 
 
 // Додатково

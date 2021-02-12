@@ -432,7 +432,7 @@
     // let array = [2,17,13,6,22,31,45,66,100,-18];
     // let i = 0;
     // while (i < array.length) {
-    //     if (i%2 === 0) {
+    //     if (array[i]%2 === 0) {
     //         console.log(array[i]);
             
     //     }
@@ -443,7 +443,7 @@
 
 // let array = [2,17,13,6,22,31,45,66,100,-18];
 //     for (let i = 0; i < array.length; i++) {
-//        if (i%2 === 0) {
+//        if (array[i]%2 === 0) {
 //         console.log(array[i]);
            
 //        }

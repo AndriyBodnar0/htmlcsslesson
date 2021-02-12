@@ -1,8 +1,28 @@
 // - создать 5 объектов. В каждом объекте не менее 3х полей. Все объекты разные по набору полей. (Т.е поле name  должно присутствовать только 1 раз в одном объекте )
 
+    let user = {
+        name: 'Andriy',
+        age:23,
+        status:'true',
+    };
 
+    let lviv = {
+        area: 182,
+        people: ukrainian,
+        cash:hryvnia,
+    };
+    let dog = {
+        nikname: 'barbos',
+        poroda:'Shepherd',
+        weight: 20,
 
+};
 // - создать 5 объектов с полностью разным набором полей. В каждом объекте должен присутсвовать массив и внутренний объект. Опишите что угодно, машину, картину, болт... Пример : let man = { name: 'kokos', skills : ['java','js'] , wife: { name: 'cherry' } };
+let man = { name: 'kokos', skills : ['java','js'] , wife: { name: 'cherry' } }
+let renault = {same_name : 'laguna', color : ['black','silver'] , engine: { turbo: 825 } }
+let audi = { type: 'sedan', comfort : ['a/c','airbag'] , audio: { blackpunkt: 'gta1' } }
+let  = { nik: '', skills : ['java','js'] , wife: { name: 'cherry' } }
+let man = { name: 'kokos', skills : ['java','js'] , wife: { name: 'cherry' } }
 // - При помощи for in вывести все ключи всех объектов из задания 1 и 2
 // - При помощи Object.keys вывести все ключи всех объектов из задания 1 и 2
 // - Создать массив из 10 объектов cars и заполнить его машинами с полями модель, год выпуска, мощность, цвет. (Значаения полей могу быть выдуманными)

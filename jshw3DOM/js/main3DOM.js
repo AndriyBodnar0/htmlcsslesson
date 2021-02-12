@@ -1,40 +1,40 @@
 // - создать 5 объектов. В каждом объекте не менее 3х полей. Все объекты разные по набору полей. (Т.е поле name  должно присутствовать только 1 раз в одном объекте )
 
-    let user = {
-        name1212: 'Andriy',
-        age:23,
-        status:'true',
-    };
+    // let user = {
+    //     name1212: 'Andriy',
+    //     age:23,
+    //     status:'true',
+    // };
 
-    let lviv = {
-        area: 182,
-        people: 'ukrainian',
-        cash:'hryvnia',
-    };
-    let dog = {
-        nikname: 'barbos',
-        poroda:'Shepherd',
-        weight: 20,
+    // let lviv = {
+    //     area: 182,
+    //     people: 'ukrainian',
+    //     cash:'hryvnia',
+    // };
+    // let dog = {
+    //     nikname: 'barbos',
+    //     poroda:'Shepherd',
+    //     weight: 20,
         
-    };
-    let ktm = {
-        successor: 'KTM 690 endurro',
-        fuelCapacity:'28l',
-        weightbike: 130,
+    // };
+    // let ktm = {
+    //     successor: 'KTM 690 endurro',
+    //     fuelCapacity:'28l',
+    //     weightbike: 130,
         
-    };
-    let ElonMusk = {
-        education: 'Queen University',
-        citizenship:'South Africa',
-        weight: 20,
+    // };
+    // let ElonMusk = {
+    //     education: 'Queen University',
+    //     citizenship:'South Africa',
+    //     weight: 20,
         
-    };
+    // };
     // - создать 5 объектов с полностью разным набором полей. В каждом объекте должен присутсвовать массив и внутренний объект. Опишите что угодно, машину, картину, болт... Пример : let man = { name: 'kokos', skills : ['java','js'] , wife: { name: 'cherry' } };
-    let man = { name: 'kokos', skills : ['java','js'] , wife: { name: 'cherry' } };
-    let renault = {same_name : 'laguna', color : ['black','silver'] , engine: { turbo: '825hp' } };
-    let audi = { type: 'sedan', comfort : ['a/c','airbag'] , audio: { blackpunkt: 'gta1' } };
-    let makaron =   { nik: 'rosana',  price : ['lowcash','hightcash'] , typemakaron: { pasta: 'Corkscrews' } };
-    let motosport = { sport_name: 'enduro', class : ['125hp','250hp'] , bikes: { stroke2T: 'Husaberg' } };
+    // let man = { name: 'kokos', skills : ['java','js'] , wife: { name: 'cherry' } };
+    // let renault = {same_name : 'laguna', color : ['black','silver'] , engine: { turbo: '825hp' } };
+    // let audi = { type: 'sedan', comfort : ['a/c','airbag'] , audio: { blackpunkt: 'gta1' } };
+    // let makaron =   { nik: 'rosana',  price : ['lowcash','hightcash'] , typemakaron: { pasta: 'Corkscrews' } };
+    // let motosport = { sport_name: 'enduro', class : ['125hp','250hp'] , bikes: { stroke2T: 'Husaberg' } };
     // - При помощи for in вывести все ключи всех объектов из задания 1 и 2
     
 //     for (const key in user) {
@@ -78,15 +78,58 @@
 // }
 
 
-
-
-
-
-
 // - При помощи Object.keys вывести все ключи всех объектов из задания 1 и 2
+
+// let key = Object.keys(user)
+// console.log('key :>> ', key);
+//-------або можна коротше--------//
+// console.log(Object.keys(user));
+// console.log(Object.keys(lviv));
+// console.log(Object.keys(dog));
+// console.log(Object.keys(ktm));
+// console.log(Object.keys(ElonMusk));
+// console.log(Object.keys(man));
+// console.log(Object.keys(makaron));
+// console.log(Object.keys(renault));
+// console.log(Object.keys(audi));
+// console.log(Object.keys(motosport));
+
+
 // - Создать массив из 10 объектов cars и заполнить его машинами с полями модель, год выпуска, мощность, цвет. (Значаения полей могу быть выдуманными)
+
+// let cars = [
+//     {model : 'Laguna', yearOfproduction : 2001 , powerEngine : 145 ,color : ['black','green']  },
+//     {model : 'Megan', yearOfproduction : 2003 , powerEngine : 200 ,color : ['yellow','grey']  },
+//     {model : 'focus', yearOfproduction : 2005 , powerEngine : 180 ,color : ['black','yellow']  },
+//     {model : '308', yearOfproduction : 2006 , powerEngine : 145 ,color : ['green','silver']  },
+//     {model : 'Passat', yearOfproduction : 2008 , powerEngine : 180 ,color : ['white','green']  },
+//     {model : 'Corola', yearOfproduction : 2007 , powerEngine : 280 ,color : ['white','grey']  },
+//     {model : 'RAV-4', yearOfproduction : 2009 , powerEngine : 180 ,color : ['yellow','silver']  },
+//     {model : 'Slavuta', yearOfproduction : 2010 , powerEngine : 280 ,color : ['black','green']  },
+//     {model : 'Lanos', yearOfproduction : 2002 , powerEngine : 100 ,color : ['blue','grey']  },
+//     {model : 'Golf', yearOfproduction : 2003 , powerEngine : 180 ,color : ['green','swhite']  },
+    
+// ]
 // - Создать массив объектов cities и заполнить его объектами с полями название, популяция, страна, регион. (Значаения полей могу быть выдуманными)
+// let cities = [
+//     {name : 'ua', population : 47000000 , country : 'Ukraine' ,region : 'Kyiv'},
+//     {name : 'pl', population : 1999 , country : 'Poland' ,region : 'Lodz'},
+//     {name : 'us', population : 5001222 , country : 'USA' ,region : 'New York'},
+//     {name : 'de', population : 25000 , country : 'Germany' ,region : 'Berlin'},
+//     {name : 'ch', population : 202 , country : 'China' ,region : 'Pekin'},
+// ]
+
+ 
 // - Создать массив объектов cars и заполнить его машинами с полями модель, год выпуска, мощность, цвет, водитель. Водитель является отдельным объектом с полями имя, возраст, пол, стаж.
+
+let cars = [
+    {model : 'Laguna', yearOfproduction : 2001 , powerEngine : 145 ,color : ['black','green'], driver : {name : 'Andriy', age : 23, sex : "female", drivingExperience : 1}  },
+    {model : 'Megan', yearOfproduction : 2003 , powerEngine : 200 ,color : ['yellow','grey'], driver : {name : 'Pasha', age : 43, sex : "female", drivingExperience : 10}  },
+    {model : 'focus', yearOfproduction : 2005 , powerEngine : 180 ,color : ['black','yellow'], driver : {name : 'Yaroslav', age : 27, sex : "female", drivingExperience : 12}  },
+    {model : '308', yearOfproduction : 2006 , powerEngine : 145 ,color : ['green','silver'], driver : {name : 'Olia', age : 28, sex : "male", drivingExperience : 5}  },
+    {model : 'Passat', yearOfproduction : 2008 , powerEngine : 180 ,color : ['white','green'], driver : {name : 'Iana', age : 33, sex : "male", drivingExperience : 18}  },
+]
+
 // - проитерировать каждый массив из задания 5,6,7 при помощи while.
 // - проитерировать каждый массив из задания 5,6,7 при помощи for .
 // - проитерировать каждый массив из задания 5,6,7 при помощи  for of.

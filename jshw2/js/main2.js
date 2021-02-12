@@ -203,29 +203,31 @@
 
 // - Відтворити роботу годинника, відрахувавши  2 години  (3 цикли! 1й - години, 2й - хвилини, 3й - секунди)
 
-// const type_count = 59
-// let min = 0;
-// let sec = 0;
-// let hour = 0;
+const type_count = 59
+let min = 0;
+let sec = 0;
+let hour = 0;
 
-// for (let i = 0; i <= 23; i++) {
-//     console.log('hour :' ,hour++);
-//     if (hour === 3) {
-//         break;
+for (let i = 0; i <= 23; i++) {
+     console.log(hour++, ':', min, ':',sec);
+    if (i > 1) {
+        break;
         
-//     }
+    }
    
-//     for (let i = 0; i <= type_count; i++) {
-//         console.log('min :' , min++);
-//         for (let i = 0; i <= type_count; i++) {
-//            console.log('sec :' ,sec++);
-           
-//         }
-//         sec = 0;
+    for (let j = 0; j <= type_count; j++) {
+        //console.log('min :' , min++);
         
-//     }
-//     min = 0;
-// }
+        for (let k = 0; k <= type_count; k++) {
+            // console.log('sec :' ,sec++);
+            console.log(i,':', j, ':',k);
+           
+        }
+        //sec = 0;
+        
+    }
+    //min = 0;
+}
 
 
 // Додатково

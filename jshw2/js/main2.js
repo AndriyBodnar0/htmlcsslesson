@@ -633,13 +633,29 @@
 // console.log(newArray);
 
 //  5. Вывести каждый елемент массива у которого соседний с права элемент - парный ???
+    let array = [];
+    let newArray = [];
+    for (let i = 0; i < 10; i++) {
+        array.push(Math.round(Math.random() * (732-8) + 8))
+        
+    }
+    console.log(array);
+
+
+    for (let i = 0; i < array.length; i++) {
+        if (array[i+1]%2 === 0) {
+            console.log(array[i])
+        
+        }
+        
+    }
 
 
 //  5.1 масив з числами [100,250,50,168,120,345,188], Які характеризують вартість окремої покупки. обрахувати середній чек.
     // let array = [100,250,50,168,120,345,188];
     // let sum = 0;
     // for (let i = 0; i < array.length; i++) {
-    //    sum += array[i] / 7;
+    //    sum += array[i] / array.length;
     // }
     // console.log(sum);
 

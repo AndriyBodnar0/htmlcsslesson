@@ -184,51 +184,39 @@
 //     }
 
 // - Відтворити роботу годинника, відрахувавши 2 хвилини (2 цикли! 1й - хвилини, 2й - секунди)
-    // const type_count = 59
-    // let min = 0;
-    // let sec = 0;
-
-    // for (let i = 0; i <= type_count; i++) {
-    //     console.log('min :' , min++);
-    // if (min === 3) {
-    //     break;
-    // }
-    //     for (let i = 0; i <= type_count; i++) {
-    //        console.log('sec :' ,sec++);
-           
-    //     }
-    //     sec = 0;
-    // } 
-
-
-// - Відтворити роботу годинника, відрахувавши  2 години  (3 цикли! 1й - години, 2й - хвилини, 3й - секунди)
-
-const type_count = 59
-let min = 0;
-let sec = 0;
-let hour = 0;
-
-for (let i = 0; i <= 23; i++) {
-     console.log(hour++, ':', min, ':',sec);
-    if (i > 1) {
-        break;
+// for (let min = 0; min < 60; min++) {
+    
+//     for (let sec = 0; sec < 60; sec++) {
+//         console.log(min,':',sec);
         
-    }
-   
-    for (let j = 0; j <= type_count; j++) {
-        //console.log('min :' , min++);
+//         if (min===2 && sec===14) {
+//              min = 60;
+//             break;
+//         }
         
-        for (let k = 0; k <= type_count; k++) {
-            // console.log('sec :' ,sec++);
-            console.log(i,':', j, ':',k);
-           
-        }
-        //sec = 0;
-        
-    }
-    //min = 0;
-}
+//     }
+    
+// }
+// // - Відтворити роботу годинника, відрахувавши  2 години  (3 цикли! 1й - години, 2й - хвилини, 3й - секунди)
 
+
+// for (let hour = 0; hour < 24; hour++) {
+
+//     for (let min = 0; min < 60; min++) {
+
+//         for (let sec = 0; sec < 60; sec++) {
+
+//             console.log(`${hour}:${min}:${sec}`);
+//             //console.log(hour,':',min,':',sec);
+
+//             if (hour === 1 && min ===23 && sec === 33) {
+//                 hour = 24;
+//                 min = 60;
+//                 break;
+//             }
+//         }
+//     }
+// }
 
 // Додатково
 // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for зібрати всі букви в слово.

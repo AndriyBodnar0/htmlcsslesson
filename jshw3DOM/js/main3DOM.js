@@ -360,8 +360,95 @@
 // - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement. Всі данні в одному блоці.
 
 
-// - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement, розділивши всі властивості по своїм блокам (div>div*4)
+// for (const user of users) {
+
+//     let item = document.createElement('div');
+//     item.innerText =`${user.name} ${user.age} ${user.status} ${user.address}`; //Виводить [object Object] Як вивести address (знайти ще один спосіб) ???
+//     document.body.appendChild(item)
+
+// }
+//--------ось так на відео----
+// for (let i = 0; i < users.length; i++) {
+//     const user = users[i];
+        
+//     let item = document.createElement('div');
+//     let address = '';
+//     for (const address1 in user.address) {
+//      address = address + "  " + user.address[address1];
+//     }
+
+//     item.innerText =`${user.name} ${user.age} ${user.status} ${address}`;
+//     document.body.appendChild(item)
+
+// }
+
+
+
+// - За допомоги циклу проітерувати  масив users, записати кожного юзера в свій блок за допомоги document.createElement, розділивши всі властивості по своїм блокам (div>div*4)
+
+
+
+
+// for (let i = 0; i < users.length; i++) {
+//     const user = users[i];
+    
+//     let div = document.createElement('div');
+//     let h3 = document.createElement('h3');
+//     let p1 = document.createElement('p');
+//     let p2 = document.createElement('p');
+//     let p3 = document.createElement('p');
+//     let address = '';
+    
+//     for (const address1 in user.address) {
+//      address = address + "  " + user.address[address1];
+//     }
+    
+//     h3.innerText = user.name;  
+//     p1.innerText = user.age;  
+//     p2.innerText = address;  
+//     p3.innerText = user.status;  
+    
+//     div.appendChild(h3);
+//     div.appendChild(p1);
+//     div.appendChild(p2);
+//     div.appendChild(p3);
+    
+//     document.body.appendChild(div);
+
+// }
+
+
+
+
 // - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement, розділивши всі властивості по своїм блокам , блок з адресою зробити окремим блоком, з блоками для кожної властивості
+
+for (let i = 0; i < users.length; i++) {
+    const user = users[i];
+    
+    let div = document.createElement('div');
+    let h3 = document.createElement('h3');
+    let p1 = document.createElement('p');
+    let p2 = document.createElement('p');
+    let p3 = document.createElement('p');
+    let address = '';
+    
+    for (const address1 in user.address) {
+     address = address + "  " + user.address[address1];
+    }
+    
+    h3.innerText = user.name;  
+    p1.innerText = user.age;  
+    p2.innerText = address;  
+    p3.innerText = user.status;  
+    
+    div.appendChild(h3);
+    div.appendChild(p1);
+    div.appendChild(p2);
+    div.appendChild(p3);
+    
+    document.body.appendChild(div);
+
+}
 
                        
 // - Дано 2 масиви з рівною кількістю об'єктів.

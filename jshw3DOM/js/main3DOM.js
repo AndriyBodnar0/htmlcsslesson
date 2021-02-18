@@ -672,14 +672,27 @@
                                     
                                     
                                     
-// -Є масив котрий характеризує правила. Створити скрипт який ітерує цей масив, та робить з кожне правило в окремому блоці.
+// -Є масив котрий характеризує правила. 
+//Створити скрипт який ітерує цей масив, та робить з кожне правило в окремому блоці.
 // При цому в блоці, номер правила записати в свій блок, текст правила записати в свій окремий блок.
 // Ріезультатом відпрацювання скріпта повинна бути структура яка міститься в блоці wrap файла rule.html
 
+ const wrap = document.createElement('div');
+ wrap.id = 'wrap';
+ for (let i = 0; i < rules.length; i++) {
+     const rule = rules[i];
+     const div = document.createElement('div');
+     const h2 = document.createElement('h2');
+     const p = document.createElement('p');
+     div.className = `rules rule${i}`;
+     h2.innerText = rule.title;
+     p.innerText = rule.body;
+     div.appendChild(h2);
+     div.appendChild(p);
 
-с
-
-                                
+     wrap.appendChild(div) 
+ }
+document.body.appendChild(wrap)     
                                     // *** за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі users. За допомогою document.createElement вивести їх в браузер. Помістити кожен окремий об'єкт в блок, при цьому кожен внутрішній об'єкт в свій блок (блок в блоці).
                                     // *** за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі posts. За допомогою document.createElement вивести їх в браузер. Помістити кожен окремий об'єкт в блок, при цьому кожен внутрішній об'єкт(якщо він існує) в свій блок (блок в блоці).
                                     // *** за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі comments. За допомогою document.createElement вивести їх в браузер. Помістити кожен окремий об'єкт в блок, при цьому кожен внутрішній об'єкт(якщо він існує) в свій блок (блок в блоці).

@@ -15,19 +15,19 @@
     //     nikname: 'barbos',
     //     poroda:'Shepherd',
     //     weight: 20,
-        
+
     // };
     // let ktm = {
     //     successor: 'KTM 690 endurro',
     //     fuelCapacity:'28l',
     //     weightbike: 130,
-        
+
     // };
     // let ElonMusk = {
     //     education: 'Queen University',
     //     citizenship:'South Africa',
     //     weight: 20,
-        
+
     // };
     // - создать 5 объектов с полностью разным набором полей. В каждом объекте должен присутсвовать массив и внутренний объект. Опишите что угодно, машину, картину, болт... Пример : let man = { name: 'kokos', skills : ['java','js'] , wife: { name: 'cherry' } };
     // let man = { name: 'kokos', skills : ['java','js'] , wife: { name: 'cherry' } };
@@ -36,45 +36,45 @@
     // let makaron =   { nik: 'rosana',  price : ['lowcash','hightcash'] , typemakaron: { pasta: 'Corkscrews' } };
     // let motosport = { sport_name: 'enduro', class : ['125hp','250hp'] , bikes: { stroke2T: 'Husaberg' } };
     // - При помощи for in вывести все ключи всех объектов из задания 1 и 2
-    
+
 //     for (const key in user) {
-//         console.log('key :>> ', key);        
+//         console.log('key :>> ', key);
 //     }
-    
+
 //     for (const key in lviv) {
-//         console.log('key :>> ', key);        
+//         console.log('key :>> ', key);
 //     }
-    
+
 //     for (const key in dog) {
-//         console.log('key :>> ', key);        
+//         console.log('key :>> ', key);
 //     }
-    
+
 //     for (const key in ktm) {
-//         console.log('key :>> ', key);        
+//         console.log('key :>> ', key);
 //     }
-    
+
 //         for (const key in ElonMusk) {
-//             console.log('key :>> ', key);        
+//             console.log('key :>> ', key);
 //     }
-    
+
 //     for (const key in man) {
-//         console.log('key :>> ', key);        
+//         console.log('key :>> ', key);
 //     }
-    
+
 //     for (const key in renault) {
-//         console.log('key :>> ', key);        
+//         console.log('key :>> ', key);
 //     }
-    
+
 //     for (const key in audi) {
-//         console.log('key :>> ', key);        
+//         console.log('key :>> ', key);
 // }
 
 //     for (const key in makaron) {
-//         console.log('key :>> ', key);        
+//         console.log('key :>> ', key);
 // }
 
 //     for (const key in motosport) {
-//         console.log('key :>> ', key);        
+//         console.log('key :>> ', key);
 // }
 
 
@@ -108,7 +108,7 @@
 //     {model : 'Slavuta', yearOfproduction : 2010 , powerEngine : 280 ,color : ['black','green']  },
 //     {model : 'Lanos', yearOfproduction : 2002 , powerEngine : 100 ,color : ['blue','grey']  },
 //     {model : 'Golf', yearOfproduction : 2003 , powerEngine : 180 ,color : ['green','swhite']  },
-    
+
 // ];
 // - Создать массив объектов cities и заполнить его объектами с полями название, популяция, страна, регион. (Значаения полей могу быть выдуманными)
 // let cities = [
@@ -119,7 +119,7 @@
 //     {name : 'ch', population : 202 , country : 'China' ,region : 'Pekin'},
 // ];
 
- 
+
 // - Создать массив объектов cars и заполнить его машинами с полями модель, год выпуска, мощность, цвет, водитель. Водитель является отдельным объектом с полями имя, возраст, пол, стаж.
 
 // let carsdriver = [
@@ -134,7 +134,7 @@
 // let i = 0;
 // while (i < cars.length) {
 //     console.log(cars[i]);
-    
+
 //     i++;
 // }
 
@@ -142,7 +142,7 @@
 // while (i < cities.length) {
 //     const citiesSave = cities[i];
 //     console.log(citiesSave);
-    
+
 //     i++;
 // }
 
@@ -150,7 +150,7 @@
 // while (i < carsdriver.length) {
 //     const carsdriver1 = carsdriver[i];
 //     console.log(carsdriver1);
-    
+
 //     i++;
 // }
 
@@ -240,11 +240,11 @@
 //     {name: 'oleg', age: 28, status: false, skills : ['node.js','js']},
 //     {name: 'andrey', age: 29, status: true, skills : ['vue','react']},
 //     {name: 'masha', age: 30, status: true, skills : ['c','c++']},
-  
+
 // ];
 
 // for (const user of users) {
-    
+
 //     console.log('Name - ',user.name);
 
 //     for (const skill of user.skills) {
@@ -256,15 +256,15 @@
 // - Создать массив пользователей. У каждого пользователя обязательно должено быть поле skills которое является массивом. Проитерировать массив пользователей и в каждом пользователе проитерировать его массив skills. Скопировать все skills всех пользователей в отедльный массив
 // let newarray = [];
 // for (let i = 0; i < users.length; i++) {
-    
+
 //     const element = users[i];
 
-    
+
 //     for (let i = 0; i < element.skills.length; i++) {
-    
+
 //         newarray.push(element.skills[i]);
 
-        
+
 //     }
 // }
 //  console.log(newarray);
@@ -354,7 +354,7 @@
 // for (const user of users) {
 
 //     newAdr.push(user.address);
-     
+
 // }
 // console.log(newAdr);
 // - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement. Всі данні в одному блоці.
@@ -370,7 +370,7 @@
 //--------ось так на відео----
 // for (let i = 0; i < users.length; i++) {
 //     const user = users[i];
-        
+
 //     let item = document.createElement('div');
 //     let address = '';
 //     for (const address1 in user.address) {
@@ -391,28 +391,28 @@
 
 // for (let i = 0; i < users.length; i++) {
 //     const user = users[i];
-    
+
 //     let div = document.createElement('div');
 //     let h3 = document.createElement('h3');
 //     let p1 = document.createElement('p');
 //     let p2 = document.createElement('p');
 //     let p3 = document.createElement('p');
 //     let address = '';
-    
+
 //     for (const address1 in user.address) {
 //      address = address + "  " + user.address[address1];
 //     }
-    
-//     h3.innerText = user.name;  
-//     p1.innerText = user.age;  
-//     p2.innerText = address;  
-//     p3.innerText = user.status;  
-    
+
+//     h3.innerText = user.name;
+//     p1.innerText = user.age;
+//     p2.innerText = address;
+//     p3.innerText = user.status;
+
 //     div.appendChild(h3);
 //     div.appendChild(p1);
 //     div.appendChild(p2);
 //     div.appendChild(p3);
-    
+
 //     document.body.appendChild(div);
 
 // }
@@ -424,35 +424,35 @@
 
 // for (let i = 0; i < users.length; i++) {
 //     const user = users[i];
-    
+
 //     let div = document.createElement('div');
 //     let name = document.createElement('h1');
 //     let age = document.createElement('p');
 //     let status = document.createElement('p');
 //     let address = document.createElement('div');
-   
-    
+
+
 //     for (const item in user.address) {
 //     const temp = document.createElement('div');
 //     temp.innerText = user.address[item];
 //         address.appendChild(temp);
-     
+
 //     }
-    
-//     name.innerText = user.name;  
-//     age.innerText = user.age;  
-//     status.innerText = user.status;  
-    
+
+//     name.innerText = user.name;
+//     age.innerText = user.age;
+//     status.innerText = user.status;
+
 //     div.appendChild(name);
 //     div.appendChild(age);
 //     div.appendChild(status);
 //     div.appendChild(address);
-    
+
 //     document.body.appendChild(div);
 
 // }
 
-                       
+
 // - Дано 2 масиви з рівною кількістю об'єктів.
 // Масиви:
             // let usersWithId = [{id: 1, name: 'vasya', age: 31, status: false}, {id: 2, name: 'petya', age: 30, status: true}, {id: 3, name: 'kolya', age: 29, status: true}, {id: 4, name: 'olya', age: 28, status: false},];
@@ -465,7 +465,7 @@
 // let usersWithCities = [{id: 1, name: 'vasya', age: 31, status: false, address: {user_id: 1, country: 'Ukraine', city: 'Ternopil'}}....]
 
 // for (const user of usersWithId) {
-    
+
 //     for (const city of citiesWithId) {
 //         if (user.id === city.user_id) {
 //             user.address = city;        }
@@ -483,7 +483,7 @@
 
 
 // - створити розмітці блок з id, class та текстом в середені. Зчитати окремо цей текст з селекторів по id , class та тегу
-    
+
 // - змінити цей текст використовуючи селектори id, class,  tag
 
 
@@ -511,7 +511,7 @@
 //   element.style.width = '300px';
 //   element.style.height = '300px';
 //   element.style.marginTop ='300px';
-  
+
 // }
 // - за допомоги document.createElement та appendChild створити таблицю на 1 рядок з трьома ячейками всередені
 
@@ -539,7 +539,7 @@
 //       let td = document.createElement('td');
 //       tr.appendChild(td);
 //     }
-  
+
 //   table.appendChild(tr);
 // }
 
@@ -555,7 +555,7 @@
 //       let td = document.createElement('td');
 //       tr.appendChild(td);
 //     }
-  
+
 //   table.appendChild(tr);
 // }
 
@@ -571,7 +571,7 @@
 //       let td = document.createElement('td');
 //       tr.appendChild(td);
 //     }
-  
+
 //   table.appendChild(tr);
 // }
 
@@ -579,10 +579,39 @@
 // document.body.appendChild(table);
 
 // --Завантажити з мережі будь-який шаблон сайту. Підключити до нього свій скріпт-файл. У файлі прописати наступні доступи та дії
-
 //  - знайти всі елементі, які мають class
+
+//-----не працює----
+// const elementsByTagName = document.getElementsByTagName('*');
+//     for (let tag of elementsByTagName) {
+//         if (tag.getAttribute('i')) {
+//             console.log(tag);
+//         }
+
+// }
+
+
+// const eleqmentList = document.querySelectorAll('[id]');
+// console.log(eleqmentList);
 //  - знайти всі параграфи ,та змінити текст на hello oktenweb!
+
+
+// const setSize = document.getElementsByTagName('p');
+// console.log(setSize);
+// for (const element of setSize) {
+//   element.innerText = '2000грн';
+//   element.style.background = 'red';
+
+// }
+
 //  - знайти всі div та змінити ім колір на червоний
+
+// const setSize = document.getElementsByTagName('div');
+// console.log(setSize);
+// for (const element of setSize) {
+//   element.style.background = 'red';
+
+// }
 
 // ============
 // ====class===
@@ -592,50 +621,66 @@
 // створити скрипт, котрий зчитує всі заголовки, та робить в блоці з id=content з них список(ul>li), який буде змістом того, що знаходиться на сторінці.
 // Скріпт повинен працювати навіть якщо кількість блоків з заголовком та параграфом зміниться.
 
+// const arrayH2 = document.getElementsByTagName('h2');
+// const content = document.getElementById('content');
+
+// const ul = document.createElement('ul'); 
+// for (const h2 of arrayH2) {
+//     const li = document.createElement('li');
+     
+//     li.innerText = h2.innerText;
+//     ul.appendChild(li);
+// }
+// content.appendChild(ul);
+
+
+			let rules = [
+    				{
+        					title: 'Первое правило Бойцовского клуба.',
+        					body: 'Никому не рассказывать о Бойцовском клубе.'
+        				},
+        				{
+            					title: 'Второе правило Бойцовского клуба.',
+            					body: 'Никогда никому не рассказывать о Бойцовском клубе.'
+            				},
+            				{
+                					title: 'Третье правило Бойцовского клуба.',
+                					body: 'В схватке участвуют только двое.'
+                				},
+                				{
+                    					title: 'Четвертое правило Бойцовского клуба.',
+                    					body: 'Не более одного поединка за один раз.'
+                    				},
+                    				{
+                        					title: 'Пятое правило Бойцовского клуба.',
+                        					body: 'Бойцы сражаются без обуви и голые по пояс.'
+                        				},
+                        				{
+                            					title: 'Шестое правило Бойцовского клуба.',
+                            					body: 'Поединок продолжается столько, сколько потребуется.'
+                            				},
+                            				{
+                                					title: 'Седьмое правило Бойцовского клуба.',
+                                					body: 'Если противник потерял сознание или делает вид, что потерял, или говорит «Хватит» — поединок окончен.'
+                                				},
+                                				{
+                                    					title: 'Восьмое и последнее правило Бойцовского клуба.',
+                                    					body: 'Новичок обязан принять бой.'
+                                    				},
+                                    
+                                    			];
+                                    
+                                    
+                                    
 // -Є масив котрий характеризує правила. Створити скрипт який ітерує цей масив, та робить з кожне правило в окремому блоці.
 // При цому в блоці, номер правила записати в свій блок, текст правила записати в свій окремий блок.
-// Результатом відпрацювання скріпта повинна бути структура яка міститься в блоці wrap файла rule.html
-
-// 			let rules = [
-// 				{
-// 					title: 'Первое правило Бойцовского клуба.',
-// 					body: 'Никому не рассказывать о Бойцовском клубе.'
-// 				},
-// 				{
-// 					title: 'Второе правило Бойцовского клуба.',
-// 					body: 'Никогда никому не рассказывать о Бойцовском клубе.'
-// 				},
-// 				{
-// 					title: 'Третье правило Бойцовского клуба.',
-// 					body: 'В схватке участвуют только двое.'
-// 				},
-// 				{
-// 					title: 'Четвертое правило Бойцовского клуба.',
-// 					body: 'Не более одного поединка за один раз.'
-// 				},
-// 				{
-// 					title: 'Пятое правило Бойцовского клуба.',
-// 					body: 'Бойцы сражаются без обуви и голые по пояс.'
-// 				},
-// 				{
-// 					title: 'Шестое правило Бойцовского клуба.',
-// 					body: 'Поединок продолжается столько, сколько потребуется.'
-// 				},
-// 				{
-// 					title: 'Седьмое правило Бойцовского клуба.',
-// 					body: 'Если противник потерял сознание или делает вид, что потерял, или говорит «Хватит» — поединок окончен.'
-// 				},
-// 				{
-// 					title: 'Восьмое и последнее правило Бойцовского клуба.',
-// 					body: 'Новичок обязан принять бой.'
-// 				},
-
-// 			];
+// Ріезультатом відпрацювання скріпта повинна бути структура яка міститься в блоці wrap файла rule.html
 
 
+с
 
-
-// *** за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі users. За допомогою document.createElement вивести їх в браузер. Помістити кожен окремий об'єкт в блок, при цьому кожен внутрішній об'єкт в свій блок (блок в блоці).
-// *** за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі posts. За допомогою document.createElement вивести їх в браузер. Помістити кожен окремий об'єкт в блок, при цьому кожен внутрішній об'єкт(якщо він існує) в свій блок (блок в блоці).
-// *** за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі comments. За допомогою document.createElement вивести їх в браузер. Помістити кожен окремий об'єкт в блок, при цьому кожен внутрішній об'єкт(якщо він існує) в свій блок (блок в блоці).
+                                
+                                    // *** за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі users. За допомогою document.createElement вивести їх в браузер. Помістити кожен окремий об'єкт в блок, при цьому кожен внутрішній об'єкт в свій блок (блок в блоці).
+                                    // *** за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі posts. За допомогою document.createElement вивести їх в браузер. Помістити кожен окремий об'єкт в блок, при цьому кожен внутрішній об'єкт(якщо він існує) в свій блок (блок в блоці).
+                                    // *** за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі comments. За допомогою document.createElement вивести їх в браузер. Помістити кожен окремий об'єкт в блок, при цьому кожен внутрішній об'єкт(якщо він існує) в свій блок (блок в блоці).
 // ****** при помощи fetch (как в примере) получить от jsonplaceholder все posts. Внутри последнего then() сделать еще один fetch который сделает запрос и получит все comments. Объеденить соответсвующий post с соответсвующими comment и вывести в браузер. Подсказка : в каждом comment есть поле postId которое определяет какой комментарий принадлежит какому посту

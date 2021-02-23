@@ -203,15 +203,64 @@
 // const changeElement1 =changeElement(array1,2)
 // console.log(array1);
 // console.log(changeElement1);
-// - *** створити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
-// Двожина масиву від 2 до 100
+// - *** створити функцію яка буде переносити елементи з значенням 0 у кінець маисву.
+// Зберігаючи при цьому порядок не нульових значень.
+// Дoвжина масиву від 2 до 100
 // Приклад
 // [1,0,6,0,3] => [1,6,3,0,0]
 // [0,1,2,3,4] => [1,2,3,4,0]
 // [0,0,1,0]   => [1,0,0,0]
 
+// function myFunck(array) {
+//     let zero = [];
+//     let number = [];
+//     for (const iterator of array) {
+//         if (iterator === 0) {
+//             zero.push(0);
+//         }else {
+//             number.push(iterator);
+//         }
+//     }
+//     return number.concat(zero);
+
+// }
+// console.log(myFunck([1,0,6,0,3]));
+// console.log(myFunck([0,1,2,3,4]));
+// console.log(myFunck([0,0,1,0]));
+//----------один варік
+
+
+// function myFunck(array) {
+
+// let tempArray = [...array];
+
+// for (let i = tempArray.length - 1; i >= 0;  i--) {
+    
+//     if (tempArray[i] === 0) {
+//         tempArray.splice(i,1);
+//         tempArray.push(0);
+        
+//     }
+    
+// }
+
+// return tempArray;
+
+// } 
+// console.log(myFunck([1,0,6,0,3]));
+// console.log(myFunck([0,1,2,3,4]));
+// console.log(myFunck([0,0,1,0]));
+
+
+
 // Створити функцію яка :
 // - Додає в боді блок з текстом "Hello owu"
+// function addDiv(message,typeTag) {
+//     const tag = document.createElement(typeTag);
+//     tag.innerHTML = message || 'Hello World';
+//     document.body.appendChild(tag);
+// }
+// addDiv(null,'div');
 // - Додає в боді елемент з текстом . Тип елементу та текст отримати через аргументи
 // - приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
 // Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали. Всі властивості авто в обному блоці

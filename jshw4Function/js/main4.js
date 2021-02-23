@@ -14,24 +14,195 @@
 // }
 
 // arrayfunc();
-// - створити функцію яка заповнює масив рандомними числами та виводить його. Для виведення використати попвередню функцію.
+//------------------------------------------------------
+// let arr = ['hello', true, 256, 'blackpunkt', null];
+// function printArr (arr){
+//     console.log(arr);
+// }
+//printArr(arr);
+// - створити функцію яка заповнює масив рандомними числами та виводить його. 
+//    Для виведення використати попвередню функцію.
+// function createArr (length, min, max) {
+// let arr = [];
+//     for (let i = 0; i < length; i++) {
+//         arr.push(Math.floor(Math.random() *(max - min)+min));
+//     }
+//     return arr;
+// }
+// let doneArr = createArr(5,5,50);
+// printArr(doneArr);
 // - створити функцію яка приймає три числа та виводить та повертає найменьше.
+// function returnMinThree(a,b,c) {
+//     let min;
+//     let max;
+//     if (a <= b && a <= c) min = a;
+//     if (b <= a && b <= c) min = b;
+//     if (c <= b && c <= a) min = c; 
+// 
+/* let min = Math.min(a,b,c); */
+//         console.log('min' ,min);
+//     return min;
+// }
+// let min = returnMinThree(10,5,3);
+// console.log('----------------------');
+// console.log(min);
 // - створити функцію яка приймає три числа та виводить та повертає найбільше.
+// function returnMax(a,b,c) {
+
+//     let max = Math.max(a,b,c);
+//     console.log('max :', max);
+//     return max;
+// }
+// let max = returnMax(prompt('Enter a'),prompt('Enter b'),prompt('Enter c'));
+// console.log('------------------');
+// console.log(max);
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше
+// function returnMinPrintMax() {
+    
+//     let min = arguments[0];
+//     let max = arguments[0];
+// for (const item of arguments) {
+//     if(item > max) max = item;   
+//     if(item < min) min = item;   
+//     }
+// console.log('max', max);
+// return min;
+// }
+// const min = returnMinPrintMax(1,2,3,4,5,9);
+// console.log('min',min);
 // - створити функцію яка виводить масив
+// function printArray() {
+//     console.log(arguments);
+// }
+// printArray(1,2,3,4,5);
 // - створити функцію яка повертає найбільше число з масиву
+// const myFunck = (array) => {
+// let max = array[0];
+
+//     for (const item of array) {
+//         if(max < item) max = item;
+//     }
+//     return max;
+// }
+// const myFunck1 = myFunck([1,2,3,4,6]);
+// console.log(myFunck1);
 // - створити функцію яка повертає найменьше число з масиву
+// const myFunck = (array) => {
+// let min = array[0];
+
+//     for (const item of array) {
+//         if(min > item) min = item;
+//     }
+//     return min;
+// }
+// const myFunck1 = myFunck([1,2,3,4,6]);
+// console.log(myFunck1);
 // - створити функцію яка приймає масив чисел та складає значення елементів масиву та повертає його.
+
+// function arrayOfNumbers (arr) {
+//     let sum = 0;
+//     for (let element of arr) {
+//         sum += element;
+//     }
+//     console.log('sum = ' + sum);
+//     return sum;
+// }
+// let arr1 = [1,2,3]
+// let sum = arrayOfNumbers(arr1);
+// console.log('sum = ' + sum);
+
+
 // - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
+
+// function average(array) {
+//     let sum=0;
+//     for (const iterator of array) {
+//         sum += iterator;
+        
+//     }
+//     return sum / array.length;
+// }
+
+// const average1 = average([3,2,72,26,2,5,8]);
+
+// console.log(average1);
 // - Створити функцію яка приймає масив будь яких объектів, та повертає значення кількості об'єктів в масиві
+// let arr1 = [
+//     {name:'Lviv', populatin:853000, country:'Ukraine', region: 'West'},
+//     {name:'Amsterdam', populatin:2400000, country:'Netherlands', region: 'North-West'},
+//     {name:'Pragua', populatin:5400000, country:'Czech', region: 'East'},
+//     {name:'Kherson', populatin:358000, country:'Ukraine', region: 'South'},
+//     {name:'Kiev', populatin:1300000, country:'Ukraine', region: 'North-Center'},
+//     {name:'Kharkiv', populatin:1100000, country:'Ukraine', region: 'North-East'},
+//     {name:'New York', populatin:8836817, country:'USA', region: 'South-East'},
+//     {name:'Chicago', populatin:2706000, country:'USA', region: 'Center-West'},
+//     {name:'San-Francisco', populatin:853543, country:'USA', region: 'South-West'},
+//     {name:'Berlin', populatin:6177513, country:'Germany', region: 'Center'},
+//     {name:'Berlin', populatin:6177513, country:'Germany', region: 'Center'},
+// ];
+// function arrOfObjects (arr) {
+//     let count = 0;
+//     for (let arrElement of arr) {
+//         if (typeof arrElement === 'object' && !Array.isArray(arrElement)){
+//             count++;
+//         }
+//             }
+//     console.log(count);
+//     return count;
+// }
+// arrOfObjects(arr1);
+
 // - Створити функцію яка приймає масив будь яких объектів, та повертає загальн кількість полів в них
-// - створити функцію  яка скаладає значення елементів з однаковими індексами  та повертає новий результуючий масив.
+// function arrOfObjects (arr) {
+//     let count = 0;
+//     for (let arrElement of arr) {
+//         if (typeof arrElement === 'object' && !Array.isArray(arrElement)){
+//             for (const key in arrElement) {
+//             count++;        
+//             }
+//         }
+//      }
+     
+//     return count;
+// }
+// const number = arrOfObjects(arr1);
+// console.log(number);
+// // - створити функцію  яка скаладає значення елементів з однаковими індексами  та повертає новий результуючий масив.
+
+
 //   Приклад
 //   [1,2,3,4]
 //   [2,3,4,5]
 //   результат
 //   [3,5,7,9]
+
+// function splitArray(array1,array2) {
+//     let result = [];
+
+//     for (let i = 0; i < array1.length; i++) {
+//         result.push(array1[i]+array2[i]);
+        
+//     }
+//     return result;
+// }
+
+// const splitArray1 = splitArray([1,2,3,4],[2,3,4,5]);
+// console.log(splitArray1);
 // - *** приймає масив та число "i", та міняє місцями об`єкт який знаходиться в індексі "i" на "i+1"
+// let array1 = [1,2,3,4];
+// function changeElement(arr,index) {
+
+//     let array = [...arr];  // тут ми клонували array1
+//     if (index < array.length - 1) {
+//         let temp = array[index];
+//         array[index + 1] = temp;
+//     }
+//     return array;
+// }
+ 
+// const changeElement1 =changeElement(array1,2)
+// console.log(array1);
+// console.log(changeElement1);
 // - *** створити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
 // Двожина масиву від 2 до 100
 // Приклад

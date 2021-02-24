@@ -254,16 +254,85 @@
 
 
 // Створити функцію яка :
+
+// - Додає в боді елемент з текстом . Тип елементу та текст отримати через аргументи
 // - Додає в боді блок з текстом "Hello owu"
+
 // function addDiv(message,typeTag) {
 //     const tag = document.createElement(typeTag);
 //     tag.innerHTML = message || 'Hello World';
 //     document.body.appendChild(tag);
 // }
 // addDiv(null,'div');
-// - Додає в боді елемент з текстом . Тип елементу та текст отримати через аргументи
-// - приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
-// Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали. Всі властивості авто в обному блоці
+
+// - приймає масив автомобілів (можна взяти з попередніх дз ),
+//та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
+let cars = [
+    {
+        model: 'Doodge Challanger SRT V8',
+        year_of_release: 2015,
+        power: '527 h.f.'
+    },
+    {
+        model: ' Ford Mustang GT Performance',
+        year_of_release: 2015,
+        power: '493 h.f.'
+    },
+    {
+        model: 'Toyota RAV4',
+        year_of_release: 2019,
+        power: '326 h.f.'
+    },
+    {
+        model: 'BMW X5 M-competition',
+        year_of_release: 2020,
+        power: '552 h.f.'
+    },
+    {
+        model: 'Mercedece_Benz GLE 420d',
+        year_of_release: 2018,
+        power: '482 h.f.'
+    },
+    {
+        model: 'Pontiac Pontiac GTO Judge',
+        year_of_release: 1969,
+        power: '593 h.f.'
+    },
+    {
+        model: 'Mazda CX-5 SKYACTIVE',
+        year_of_release: 2018,
+        power: '328 h.f.'
+    },
+    {
+        model: ' Koenigsegg One:1',
+        year_of_release: 2014,
+        power: '1360 h.f'
+    },
+    {
+        model: 'Buick GSX',
+        year_of_release: 1970,
+        power: '350 h.f'
+    },
+    {
+        model: 'Audi A7 Perfomance',
+        year_of_release: 2019,
+        power: '420 h.f'
+    }
+];
+function getCar (carArray, iden ) {
+    let block = document.getElementById(iden);
+    let ul = document.createElement('ul');
+    for (let i = 0; i < carArray.length; i++) {
+        let car = carArray[i];
+        let li = document.createElement('li');
+        li.innerHTML = `${car.model}  ${car.year_of_release}  ${car.power}`;
+        ul.appendChild(li);
+    }
+    block.appendChild(ul);
+}
+getCar(cars,'list');
+// Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали.
+// Всі властивості авто в обному блоці
 // - приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
 // Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали.
 // Для кожної властивості створити всередені блока автомоблія свій блок

@@ -319,24 +319,50 @@ let cars = [
         power: '420 h.f'
     }
 ];
-function getCar (carArray, iden ) {
-    let block = document.getElementById(iden);
-    let ul = document.createElement('ul');
-    for (let i = 0; i < carArray.length; i++) {
-        let car = carArray[i];
-        let li = document.createElement('li');
-        li.innerHTML = `${car.model}  ${car.year_of_release}  ${car.power}`;
-        ul.appendChild(li);
-    }
-    block.appendChild(ul);
-}
-getCar(cars,'list');
+// function getCar (carArray, iden ) {
+//     let block = document.getElementById(iden);
+//     let ul = document.createElement('ul');
+//     for (let i = 0; i < carArray.length; i++) {
+//         let car = carArray[i];
+//         let li = document.createElement('li');
+//         li.innerHTML = `${car.model}  ${car.year_of_release}  ${car.power}`;
+//         ul.appendChild(li);
+//     }
+//     block.appendChild(ul);
+// }
+// getCar(cars,'list');
 // Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали.
 // Всі властивості авто в обному блоці
 // - приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
 // Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали.
 // Для кожної властивості створити всередені блока автомоблія свій блок
 
+// function addListCar(Arraycars,idtag) {
+//     const block = document.getElementById(`${idtag}`);
+
+//     for (let i = 0; i < Arraycars.length; i++) {
+//         let car = Arraycars[i];
+
+//         const div = document.createElement('div');
+//         const model = document.createElement('h2');
+//         const power = document.createElement('h3');
+//         const year_of_release = document.createElement('p');
+
+//         model.innerHTML = `model : ${car.model}`;
+//         power.innerHTML = `power : ${car.power}`;
+//         year_of_release.innerHTML = `modyear_of_releaseel : ${car.year_of_release}`;
+         
+//         div.appendChild(model);
+//         div.appendChild(power);
+//         div.appendChild(year_of_release);
+
+//         document.body.appendChild(div); 
+//     }
+// }
+
+// addListCar(cars, 'div');
+
+//---------------------------------
 // (на основі минулого ДЗ)
 // **- функція приймає 2 масиви з рівною кількістю об'єктів та з'єднює в один об'єкт користувача та місто з відповідними "id" та "user_id",
 // та повертає масив цих з'єднаних об'єктів.
@@ -345,7 +371,27 @@ getCar(cars,'list');
 //             let citiesWithId = [{user_id: 3, country: 'USA', city: 'Portland'}, {user_id: 1, country: 'Ukraine', city: 'Ternopil'}, {user_id: 2, country: 'Poland', city: 'Krakow'}, {user_id: 4, country: 'USA', city: 'Miami'},];
 // Частковий приклад реультату:
 
+// let usersWithId = [{id: 1, name: 'vasya', age: 31, status: false}, {id: 2, name: 'petya', age: 30, status: true}, {id: 3, name: 'kolya', age: 29, status: true}, {id: 4, name: 'olya', age: 28, status: false},];
+// let citiesWithId = [{user_id: 3, country: 'USA', city: 'Portland'}, {user_id: 1, country: 'Ukraine', city: 'Ternopil'}, {user_id: 2, country: 'Poland', city: 'Krakow'}, {user_id: 4, country: 'USA', city: 'Miami'},];
 
+// function split(array1,array2) {
+//     let users = JSON.parse(JSON.stringify(array1));
+//     let cities = JSON.parse(JSON.stringify(array2));
+
+//     for (const city of cities) {
+//         for (const user of users) {
+//             if (city.user_id === user.id) {
+//                 user.adress = city;
+                
+//             }
+//         }
+//     } 
+
+//     return users;
+// }
+
+// const split1 = split(usersWithId,citiesWithId)
+// console.log(split1); 
 
 // ***- беремо завдання з правилами з укроку №3 :
 // Та робимо це функцією.При цьому правила отримувати через аргумент.

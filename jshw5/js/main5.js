@@ -140,12 +140,60 @@ let attributes = [
 // let a = new Tag(title,action,attributes);
 // console.log(a);
 // ==============================================
+//відео 12:28
 // - Створити об'єкт car, з властивостями модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
 // -- drive () - яка виводить в консоль "їдемо зі швидкістю {максимальна швидкість} на годину"
 // -- info () - яка виводить всю інформацію про автомобіль
 // -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
 // -- changeYear (newValue) - змінює рік випуску на значення newValue
 // -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і доавляет його в поточний об'єкт car
+
+// let car = {
+
+//     model : 'Laguna',
+//     produce : 'Renault',
+//     yearofproduction : 2005,
+//     maxSpeed : 220,
+//     volumeEngine : 1600,
+//     driver : '',
+//     drive: function () {
+
+//         console.log(`їдемо зі швидкістю ${this.maxSpeed} на годину`);
+
+//     },
+
+//     info: function (){
+
+//         console.log(`
+//         model: ${this.model}  
+//         produce: ${this.produce} 
+//         yearofproduction: ${this.yearofproduction} 
+//         maxSpeed: ${this.maxSpeed} 
+//         volumeEngine: ${this.volumeEngine}
+//         `);
+//     },
+
+//     increaseMaxSpeed: function (newSpeed){
+//         this.maxSpeed += newSpeed;
+//     },
+
+//     changeYear: function (newValue) {
+//         this.yearofproduction += newValue;
+//     },
+
+//     addDriver: function (newdriver) {
+//         this.driver = newdriver;
+//     }
+
+
+// };
+// car.changeYear(5);
+// car.increaseMaxSpeed(20);
+// car.info();
+// car.drive();
+// car.addDriver('Andriy');
+//------------------------------------
+
 // ==============================================
 // CLASS
 
@@ -158,6 +206,60 @@ let attributes = [
 // -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і доавляет його в поточний об'єкт car
 // ==============================================
 
+        volumeEngine : 1600,
+        function Car(model,
+            produce,
+            yearofproduction,
+            maxSpeed,
+            volumeEngine,
+            ) 
+        {
+
+        this.model = 'Laguna',
+        this.produce = 'Renault',
+        this.yearofproduction = 2005,
+        this.maxSpeed = 220,
+        this.volumeEngine = 1600,
+        this.driver = '',
+        this.drive = function () {
+    
+            console.log(`їдемо зі швидкістю ${this.maxSpeed} на годину`);
+    
+        },
+    
+        info: function (){
+    
+            console.log(`
+            model: ${this.model}  
+            produce: ${this.produce} 
+            yearofproduction: ${this.yearofproduction} 
+            maxSpeed: ${this.maxSpeed} 
+            volumeEngine: ${this.volumeEngine}
+            `);
+        },
+    
+        increaseMaxSpeed: function (newSpeed){
+            this.maxSpeed += newSpeed;
+        },
+    
+        changeYear: function (newValue) {
+            this.yearofproduction += newValue;
+        },
+    
+        addDriver: function (newdriver) {
+            this.driver = newdriver;
+        }
+    
+    
+    };
+    car.changeYear(5);
+    car.increaseMaxSpeed(20);
+    car.info();
+    car.drive();
+    car.addDriver('Andriy');
+
+    //27 хвилина пояснення длячого  if 
+    
 // ==============================================
 // - Створити клас який дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
 // -- drive () - яка виводить в консоль "їдемо зі швидкістю {максимальна швидкість} на годину"

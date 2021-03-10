@@ -146,7 +146,7 @@ let attributes = [
 // -- info () - яка виводить всю інформацію про автомобіль
 // -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
 // -- changeYear (newValue) - змінює рік випуску на значення newValue
-// -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і доавляет його в поточний об'єкт car
+// -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і добавляє його в поточний об'єкт car
 
 // let car = {
 
@@ -155,7 +155,6 @@ let attributes = [
 //     yearofproduction : 2005,
 //     maxSpeed : 220,
 //     volumeEngine : 1600,
-//     driver : '',
 //     drive: function () {
 
 //         console.log(`їдемо зі швидкістю ${this.maxSpeed} на годину`);
@@ -163,6 +162,18 @@ let attributes = [
 //     },
 
 //     info: function (){
+//         if (this.driver) {
+
+//         console.log(`
+//         model: ${this.model}  
+//         produce: ${this.produce} 
+//         yearofproduction: ${this.yearofproduction} 
+//         maxSpeed: ${this.maxSpeed} 
+//         volumeEngine: ${this.volumeEngine}
+//         driver: ${this.driver}
+//         `);
+            
+//         } else {   
 
 //         console.log(`
 //         model: ${this.model}  
@@ -171,6 +182,8 @@ let attributes = [
 //         maxSpeed: ${this.maxSpeed} 
 //         volumeEngine: ${this.volumeEngine}
 //         `);
+
+//         }
 //     },
 
 //     increaseMaxSpeed: function (newSpeed){
@@ -192,6 +205,9 @@ let attributes = [
 // car.info();
 // car.drive();
 // car.addDriver('Andriy');
+// car.info();
+// car.addDriver('name');
+
 //------------------------------------
 
 // ==============================================
@@ -206,59 +222,78 @@ let attributes = [
 // -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і доавляет його в поточний об'єкт car
 // ==============================================
 
-        volumeEngine : 1600,
-        function Car(model,
-            produce,
-            yearofproduction,
-            maxSpeed,
-            volumeEngine,
-            ) 
-        {
+     
+    //     function Car(
+    //         model,
+    //         produce,
+    //         yearofproduction,
+    //         maxSpeed,
+    //         volumeEngine,
+    //         ) 
+    //     {
 
-        this.model = 'Laguna',
-        this.produce = 'Renault',
-        this.yearofproduction = 2005,
-        this.maxSpeed = 220,
-        this.volumeEngine = 1600,
-        this.driver = '',
-        this.drive = function () {
+    //     this.model = model || 'Laguna';
+    //     this.produce = produce || 'Renault';
+    //     this.yearofproduction = yearofproduction || 2005;
+    //     this.maxSpeed = maxSpeed || 220;
+    //     this.volumeEngine = volumeEngine || 1600;
+    //     this.drive = function () {
     
-            console.log(`їдемо зі швидкістю ${this.maxSpeed} на годину`);
+    //         console.log(`їдемо зі швидкістю ${this.maxSpeed} на годину`);
     
-        },
+    //     },
     
-        info: function (){
-    
-            console.log(`
-            model: ${this.model}  
-            produce: ${this.produce} 
-            yearofproduction: ${this.yearofproduction} 
-            maxSpeed: ${this.maxSpeed} 
-            volumeEngine: ${this.volumeEngine}
-            `);
-        },
-    
-        increaseMaxSpeed: function (newSpeed){
-            this.maxSpeed += newSpeed;
-        },
-    
-        changeYear: function (newValue) {
-            this.yearofproduction += newValue;
-        },
-    
-        addDriver: function (newdriver) {
-            this.driver = newdriver;
-        }
-    
-    
-    };
-    car.changeYear(5);
-    car.increaseMaxSpeed(20);
-    car.info();
-    car.drive();
-    car.addDriver('Andriy');
+    //     this.info = function (){
+    //     if (this.driver) {
 
-    //27 хвилина пояснення длячого  if 
+    //                 console.log(`
+    //                 model: ${this.model}  
+    //                 produce: ${this.produce} 
+    //                 yearofproduction: ${this.yearofproduction} 
+    //                 maxSpeed: ${this.maxSpeed} 
+    //                 volumeEngine: ${this.volumeEngine}
+    //                 driver: ${this.driver}
+    //                 `);
+                        
+    //                 } else {   
+            
+    //                 console.log(`
+    //                 model: ${this.model}  
+    //                 produce: ${this.produce} 
+    //                 yearofproduction: ${this.yearofproduction} 
+    //                 maxSpeed: ${this.maxSpeed} 
+    //                 volumeEngine: ${this.volumeEngine}
+    //                 `);
+            
+    //                 }
+           
+    //     },
+    
+    //     this.increaseMaxSpeed = function (newSpeed){
+    //         this.maxSpeed += newSpeed;
+    //     },
+    
+    //     this.changeYear = function (newValue) {
+    //         this.yearofproduction = newValue;
+    //     },
+    
+    //     this.addDriver = function (newdriver) {
+    //         this.driver = newdriver;
+    //     }
+    
+    
+    // };
+
+    // let car = new Car('focus','ford',2008,160,2000);
+    // car.changeYear(5);
+    // car.increaseMaxSpeed(20);
+    // car.info();
+    // car.drive();
+    // car.addDriver('Andriy');
+
+//-----------------------------------------------
+
+//-----------------------------------------------
     
 // ==============================================
 // - Створити клас який дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
@@ -268,7 +303,74 @@ let attributes = [
 // -- changeYear (newValue) - змінює рік випуску на значення newValue
 // -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і доавляет його в поточний об'єкт car
 // ==============================================
+// class Car { 
+//     constructor(
+//     model,
+//     produce,
+//     yearofproduction,
+//     maxSpeed,
+//     volumeEngine
+//     ) 
+// {
+// this.model = model;
+// this.produce = produce;
+// this.yearofproduction = yearofproduction;
+// this.maxSpeed = maxSpeed;
+// this.volumeEngine = volumeEngine;
+// }
+//     drive() {
 
+//     console.log(`їдемо зі швидкістю ${this.maxSpeed} на годину`);
+
+// };
+
+//     info() {
+// if (this.driver) {
+
+//             console.log(`
+//             model: ${this.model}  
+//             produce: ${this.produce} 
+//             yearofproduction: ${this.yearofproduction} 
+//             maxSpeed: ${this.maxSpeed} 
+//             volumeEngine: ${this.volumeEngine}
+//             driver: ${this.driver}
+//             `);
+                
+//             } else {   
+    
+//             console.log(`
+//             model: ${this.model}  
+//             produce: ${this.produce} 
+//             yearofproduction: ${this.yearofproduction} 
+//             maxSpeed: ${this.maxSpeed} 
+//             volumeEngine: ${this.volumeEngine}
+//             `);
+    
+//             }
+   
+// };
+
+//     increaseMaxSpeed(newSpeed){
+//     this.maxSpeed += newSpeed;
+//     };
+
+//     changeYear(newValue) {
+//     this.yearofproduction = newValue;
+//     };
+
+//     addDriver(newdriver) {
+//     this.driver = newdriver;
+//     };
+
+
+// }
+
+// let car = new Car('prius','toyota',2015,300,2000);
+// car.info();
+
+//-----------------------------------------------
+
+//-----------------------------------------------
 
 // ==============================================
 // -створити класс попелюшка з полями ім'я, вік, розмір ноги
@@ -276,9 +378,52 @@ let attributes = [
 // --Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
 // -- за допоиоги циклу знайти яка попелюшка повинна бути з принцом
 // ==============================================
+class Cinderella {
+   constructor( name,age,footSize,)
+   {
+    		this.name = name;
+    		this.age = age;
+    		this.footSize = footSize;
+    	}
 
+}
 
+class Prince {
+    	constructor(name, age, shoe) {
+    		this.name = name;
+    		this.age = age;
+    		this.shoe = shoe;
+    	}
+    }
+let cinderella1 = new Cinderella('cinderella1', 1, 1);
+let cinderella2 = new Cinderella('cinderella2', 2, 2);
+let cinderella3 = new Cinderella('cinderella3', 3, 3);
+let cinderella4 = new Cinderella('cinderella3', 4, 3);
+let cinderella5 = new Cinderella('cinderella3', 5, 3);
+let cinderella6 = new Cinderella('cinderella3', 6, 3);
+let cinderella7 = new Cinderella('cinderella3', 7, 3);
+let cinderella8 = new Cinderella('cinderella3', 8, 3);
+let cinderella9 = new Cinderella('cinderella3', 9, 3);
+let cinderella10 = new Cinderella('cinderella3', 10, 3);
 
+let arrWithGirls = [
+	cinderella1,
+	cinderella2,
+	cinderella3,
+	cinderella4,
+	cinderella5,
+	cinderella6,
+	cinderella7,
+	cinderella8,
+	cinderella9,
+	cinderella10];
+let pri = new Prince('Valera', 17, 2);
+for (const arrWithGirl of arrWithGirls) {
+	if (arrWithGirl.footSize === pri.shoe)
+		console.log(
+			'Winner is = ' + arrWithGirl.name + ' ' + arrWithGirl.age + ' ' +
+			arrWithGirl.footSize);
+}
 // ==============================================
 // -створити функцію конструктор попелюшка з полями ім'я, вік, розмір ноги
 // --Створити 10 попелюшок , покласти їх в масив

@@ -417,7 +417,7 @@ let arrWithGirls = [
 	cinderella8,
 	cinderella9,
 	cinderella10];
-let pri = new Prince('Valera', 17, 2);
+let pri = new Prince('Tesla', 17, 2);
 for (const arrWithGirl of arrWithGirls) {
 	if (arrWithGirl.footSize === pri.shoe)
 		console.log(
@@ -430,3 +430,54 @@ for (const arrWithGirl of arrWithGirls) {
 // --Сторити об'єкт типу "принц" за допомоги функції конструктора з полями ім'я, вік, туфелька яку він знайшов, та функцію "пошук попелюшки"
 // -- функція повинна приймати масив попелюшок, та шукає ту котра йому підходить
 // ==============================================
+
+
+// function Cinderella(name, age, footSize) {
+// 	this.name = name;
+// 	this.age = age;
+// 	this.footSize = footSize;
+// }
+//
+//
+// function Prince(name, age, shoe) {
+// 	this.name = name;
+// 	this.age = age;
+// 	this.shoe = shoe;
+//
+// 	this.getCinderella = function(arrWithCinderellas) {
+// 		for (const arrWithGirl of arrWithCinderellas) {
+// 			if (arrWithGirl.footSize === this.shoe)
+// 				console.log(
+// 					'Winner is = ' + arrWithGirl.name + ' ' + arrWithGirl.age +
+// 					' ' +
+// 					arrWithGirl.footSize);
+// 		}
+// 	};
+// }
+//
+//
+// let cinderella1 = new Cinderella('cinderella1', 1, 1);
+// let cinderella2 = new Cinderella('cinderella2', 2, 2);
+// let cinderella3 = new Cinderella('cinderella3', 3, 3);
+// let cinderella4 = new Cinderella('cinderella4', 4, 4);
+// let cinderella5 = new Cinderella('cinderella5', 5, 5);
+// let cinderella6 = new Cinderella('cinderella6', 6, 6);
+// let cinderella7 = new Cinderella('cinderella7', 7, 7);
+// let cinderella8 = new Cinderella('cinderella8', 8, 8);
+// let cinderella9 = new Cinderella('cinderella9', 9, 9);
+// let cinderella10 = new Cinderella('cinderella10', 10, 10);
+//
+// let arrWithGirls = [
+// 	cinderella1,
+// 	cinderella2,
+// 	cinderella3,
+// 	cinderella4,
+// 	cinderella5,
+// 	cinderella6,
+// 	cinderella7,
+// 	cinderella8,
+// 	cinderella9,
+// 	cinderella10];
+//
+// let prince = new Prince('va',1,8);
+// prince.getCinderella(arrWithGirls)

@@ -43,4 +43,16 @@ let wordArray = [
     'abaar','cgot','gdffd','dand','eacdf',
 ];
 // -- отсортировать его по алфавиту в восходящем порядке.
+// let newWordArray = wordArray.sort((a, b) => a.localeCompare(b) );
+// console.log(newWordArray);
+
+// -- отсортировать его по алфавиту  в нисходящем порядке.
+// let newWordArray = wordArray.sort((a, b) => b.localeCompare(a) );
+// console.log(newWordArray);
+//
+// -- отфильтровать слова длиной менее 4х символов
+// let wordArraylength = wordArray.filter(value =>value.length < 5  );
+// console.log(wordArraylength);
+
+// -- перебрать массив при помощи map() и получить новый массив в котором все значения будут со знаком "!" в конце
 
